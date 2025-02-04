@@ -1,8 +1,18 @@
 import express from 'express'
 import cors from 'cors'
 import { PrismaClient } from '@prisma/client'
+import dotenv from 'dotenv';
 
-const prisma = new PrismaClient()
+dotenv.config();
+
+const prisma = new PrismaClient({
+    datasources: {
+      db: {
+        url: process.env.DATABASE_URL // Aqui usamos a variável de ambiente
+      }
+    }
+  });
+  
 
 const app = express()
 
@@ -79,4 +89,8 @@ app.delete('/books/:id', async (req, res) => {
     res.status(200).json({message: "Livro deletado com sucesso"})
 })
 
-app.listen(3000)
+const PORT = process.env.PORT || 3000;
+
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
+});
