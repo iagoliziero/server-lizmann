@@ -1,4 +1,4 @@
-# 📚 Digital Library - Back-end
+# 📚 Digital Library - Api
 
 [![Deploy no Vercel](https://img.shields.io/badge/Vercel-Digital--Library-blue)](https://digital-library-lizmann.vercel.app/)
 
