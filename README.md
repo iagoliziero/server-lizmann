@@ -5,7 +5,7 @@
 <img width="450" alt="Image" src="https://github.com/user-attachments/assets/0f4bab9d-5640-48e4-b6bd-2185c9cef2bd" />
 <br><br>
 
-Este repositório contém o **back-end** do sistema **Digital Library**. A aplicação gerencia uma biblioteca de livros, permitindo a **listagem, adição, edição e remoção** de livros através de uma API RESTful desenvolvida com **Node.js** e **Express**. O banco de dados utilizado é o **MongoDB Atlas**, com **Prisma** como ORM.
+Este repositório contém a **API** do sistema **Digital Library**. A aplicação gerencia uma biblioteca de livros, permitindo a **listagem, adição, edição e remoção** de livros através de uma API RESTful desenvolvida com **Node.js** e **Express**. O banco de dados utilizado é o **MongoDB Atlas**, com **Prisma** como ORM.
 
 ## 🚀 Tecnologias
 
